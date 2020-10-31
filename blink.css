@@ -1,0 +1,36 @@
+body {
+  margin:0;
+  padding:0;
+  /*The space between the elements in the body will be by default 0. Same idea for the space between the content and it's border.*/
+  display:flex;
+  height:100vh;
+  /*This will change the height and display attribute making it higher for height. However, display flex is a bit more complicated.*/
+  align-items:center;
+  justify-content:center;
+  /*Align-items vertically makes all the content centered. Justify-content does so but at the horizontal level. A bit like text-align but not quite in the sense that text align also centers the text in the element. For example, in a button, justify-content will center the button but sometimes it won't center the text in the button.*/
+  font-family:"Varela Round",sans-serif;
+  /*Simply, this changes the font style.*/
+  background:#000;
+  /*This changes the background, in this case the color. I changed it here to #000 which is the hexadecimal equivalent to black.*/
+  color:white;
+  /*Do I really have to explain this?*/
+  animation: blink 1.5s infinite linear forwards;
+  /*This selects the animation that it defined in the bottom as well as makin it last 1 and a half secocnds and run an infinte amount of times. It also assures that each part lasts the same amount of time with linear and well, it goes forwards.*/
+} .text {
+  font-weight:900;
+  /*Changes the boldness of the text.*/
+  font-size:50px;
+  /*Changes the size of the tex.*/
+} @keyframes blink
+/*Keyframes is how you start an animation then followed by the animation name.*/{
+  0% {
+    color:transparent;
+    /*It will start off transparent...*/
+  } 50% {
+    color:white;
+    /*Then become white...*/
+  } 100% {
+    color:transparent;
+    /*And go back to being transparent again.*/
+  }
+}
